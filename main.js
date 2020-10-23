@@ -26,7 +26,7 @@ function saveFeedback(){
 		}, 2000);
 	} else {
 		document.getElementById('notice').innerHTML = "Cannot send feedback, something is missing...";
-		document.getElementById('notice').style.display = 'block';
+		document.getElementById('notice').style.display = 'initial';
 		setTimeout(() => {
 			document.getElementById('notice').style.display = 'none';
 		}, 2000);
