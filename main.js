@@ -11,7 +11,7 @@ function saveFeedback(){
 		
 		var newBlog = {
 			//author: author,
-			timestamp: date.getTime().toISOString(),
+			timestamp: date.getTime(),
 			title: blogTitle,
 			content: blogContent
 		};
@@ -25,12 +25,12 @@ function saveFeedback(){
 			window.location.back();
 		}, 2000);
 	} else {
-		alert('Feedback needs to have title and content 😒');
-		
 		document.getElementById('notice').innerHTML = "Cannot send feedback, something is missing...";
-		document.getElementById('notice').style.display = 'initial';
+		document.getElementById('notice').style.display = 'block';
 		setTimeout(() => {
 			document.getElementById('notice').style.display = 'none';
 		}, 2000);
+		
+		alert('Feedback needs to have title and content 😒');
 	}
 }
