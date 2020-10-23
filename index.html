@@ -15,13 +15,37 @@
 		<div id="newBlog">
 			<div id="newBlogTitle" contenteditable="true" placeholder="Feedback Title"></div>
 
-			<div id="newBlogContent" contenteditable="true" placeholder="😘"></div>
+			<div id="newBlogContent" contenteditable="true" placeholder="🙄🥺😢😭\n😠😡🤬"></div>
 
 			<div id="saveBlog">
-				<button onclick="saveFeedback()">Send</button>
+				<button onclick="saveFeedback()">Send 😘</button>
 			</div>
 		</div>
-
+		
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script>
+		
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+			https://firebase.google.com/docs/web/setup#available-libraries -->
+		
+		<script>
+		// Your web app's Firebase configuration
+			var firebaseConfig = {
+				apiKey: "AIzaSyAI3DcxcJRHcJkYi9GvFcToIy9cq6QYIfk",
+				authDomain: "pteapp-47926.firebaseapp.com",
+				databaseURL: "https://pteapp-47926.firebaseio.com",
+				projectId: "pteapp-47926",
+				storageBucket: "pteapp-47926.appspot.com",
+				messagingSenderId: "714326360861",
+				appId: "1:714326360861:web:f239473a595d507f6757f4"
+			};
+		
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+			var db = firebase.database();
+		</script>
+		
 		<script src="./main.js"></script>	
 	</body>
 </html>
