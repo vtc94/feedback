@@ -18,5 +18,7 @@ function saveBlog(){
 		console.log(newBlog);
 		
 		db.ref('feedback/' + date.getTime()).set(newBlog);
+	} else {
+		alert('Feedback needs to have title and content 😒');
 	}
 }
