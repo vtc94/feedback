@@ -49,9 +49,9 @@
 	content: attr(placeholder);
 	display: block; /* For Firefox */
 	/*color: rgb(150, 150,150);*/
-	opacity: .6;
+	opacity: .3;
 	font-weight: 300;
-	font-size: 20px;
+	font-size: 15px;
 }
 
 #newBlogContent{
@@ -61,7 +61,7 @@
 	padding: 30px 30px 20px 30px;
 	margin: 0 20px 0px 20px;
 	color: rgba(220,220,220,1);
-	font-size: 15px;
+	font-size: 18px;
 	outline: 0;
 	
 }
