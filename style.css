@@ -5,6 +5,7 @@
 	text-align: center; 
 	width: 100%; 
 	z-index: 10000;
+	background: rgba(0,123,255,1);
 }
 
 #newBlog{
@@ -18,7 +19,6 @@
 	left: 0;
 	bottom: 0;
 	right: 0;
-	z-index: 4;
 	overflow: auto;
 }
 
