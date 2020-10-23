@@ -1,3 +1,17 @@
+var firebaseConfig = {
+	apiKey: "AIzaSyAI3DcxcJRHcJkYi9GvFcToIy9cq6QYIfk",
+	authDomain: "pteapp-47926.firebaseapp.com",
+	databaseURL: "https://pteapp-47926.firebaseio.com",
+	projectId: "pteapp-47926",
+	storageBucket: "pteapp-47926.appspot.com",
+	messagingSenderId: "714326360861",
+	appId: "1:714326360861:web:f239473a595d507f6757f4"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+var db = firebase.database();
+
 function saveBlog(){
 	var blogTitle = document.getElementById("newBlogTitle").innerText.trim();
 	console.log(blogTitle);
@@ -5,29 +19,18 @@ function saveBlog(){
 	//console.log(blogContent);
 	
 	if(blogTitle != '' && blogContent != ''){
-		var author = localStorage.getItem("user");
+		//var author = localStorage.getItem("user");
 		//console.log(author);
+		let date = new Date();
+		
 		var newBlog = {
-			author: author,
+			//author: author,
+			timestamp: date.getTime().toISOString(),
 			title: blogTitle,
 			content: blogContent
 		};
 		console.log(newBlog);
-		var xhttp = new XMLHttpRequest();
-		xhttp.onreadystatechange = function(){
-			if(this.readyState == 4 && this.status == 200){
-				var w = window.open('','','width=100,height=100')
-				w.document.write('Saved successfully! Redirecting to blog list...')
-				w.focus()
-				setTimeout(() => {
-					w.close();
-					window.history.back();
-				}, 1000);
-			}
-		};
 		
-		xhttp.open('post', location.pathname, true);
-		xhttp.setRequestHeader('content-type', 'application/x-www-form-urlencoded');
-		xhttp.send('newBlog=' + JSON.stringify(newBlog));
+		db.ref('feedback/' + date.getTime()).set(newBlog);
 	}
 }
