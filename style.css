@@ -2,10 +2,12 @@
 	position: fixed; 
 	top: 0; 
 	left: 0; 
+	height: 75px;
 	text-align: center; 
 	width: 100%; 
 	z-index: 10000;
-	background: rgba(0,123,255,1);
+	background: #fff3cd;
+	border-radius: 5px;
 }
 
 #newBlog{
