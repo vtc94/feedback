@@ -1,14 +1,15 @@
 #notice {
 	position: fixed; 
-	top: 0; 
+	top: 10px; 
 	left: 0; 
-	height: 75px;
+	height: 40px;
 	text-align: center; 
 	width: 100%; 
 	z-index: 10000;
 	background: #fff3cd;
 	color: #856404;
 	border-radius: 5px;
+	display: none;
 }
 
 #newBlog{
