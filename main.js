@@ -1,6 +1,6 @@
 function saveFeedback(){
 	var blogTitle = document.getElementById("newBlogTitle").innerText.trim();
-	console.log(blogTitle);
+
 	var blogContent = document.getElementById("newBlogContent").innerText.trim();
 	//console.log(blogContent);
 	
