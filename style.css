@@ -44,6 +44,15 @@
 	margin: 0 20px 0px 20px;
 	overflow: auto;
 }*/
+
+#newBlogContent[contenteditable=true]:empty:before{
+	content: attr(placeholder);
+	display: block; /* For Firefox */
+	/*color: rgb(150, 150,150);*/
+	font-weight: 300;
+	font-size: 20px;
+}
+
 #newBlogContent{
 	background: rgba(150,150,150, 0.3);
 	position:relative;
