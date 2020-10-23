@@ -1,0 +1,75 @@
+#newBlog{
+	position:fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,1);
+	color: rgb(150, 150,150);
+	font-family: calibri;
+	top:0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 4;
+	overflow: auto;
+}
+
+#newBlogTitle[contenteditable=true]:empty:before{
+	content: attr(placeholder);
+	display: block; /* For Firefox */
+	color: rgb(150, 150,150);
+	font-weight: 300;
+	font-size: 20px;
+}
+
+#newBlogTitle{
+	min-height: 30px;
+	margin: 20px 20px;
+	padding: 7px 0 10px 15px;
+	background: rgba(150,150,150, 0.3);
+	outline: 0;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+#newBlogTitle:focus{
+	font-weight: 600;
+	font-size: 20px;
+	color: rgba(200,200,200,1);
+}
+
+/*#newBlogContent-wrap{
+	background: rgba(150,150,150, 0.3);
+	position: relative;
+	height: 80%;
+	margin: 0 20px 0px 20px;
+	overflow: auto;
+}*/
+#newBlogContent{
+	background: rgba(150,150,150, 0.3);
+	position:relative;
+	min-height: 73%;
+	padding: 30px 30px 20px 30px;
+	margin: 0 20px 0px 20px;
+	color: rgba(220,220,220,1);
+	font-size: 15px;
+	outline: 0;
+	
+}
+
+#newBlogContent:focus{
+	font-weight: 300;
+	/*font-size: 15px;*/
+	color: rgba(255,255,255,1);
+}
+#saveBlog{
+	background: rgba(150,150,150, 0.3);
+	position: relative;
+	margin: 0 20px 6px 20px;
+	text-align: right;
+	padding: 0px 40px 40px 0;
+}
+
+#saveBlog button{
+	width: 80px;
+	height: 30px;
+}
