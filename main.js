@@ -15,7 +15,6 @@ function saveFeedback(){
 			title: blogTitle,
 			content: blogContent
 		};
-		console.log(newBlog);
 		
 		db.ref('feedback/' + date.getTime()).set(newBlog);
 		
