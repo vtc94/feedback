@@ -1,17 +1,3 @@
-var firebaseConfig = {
-	apiKey: "AIzaSyAI3DcxcJRHcJkYi9GvFcToIy9cq6QYIfk",
-	authDomain: "pteapp-47926.firebaseapp.com",
-	databaseURL: "https://pteapp-47926.firebaseio.com",
-	projectId: "pteapp-47926",
-	storageBucket: "pteapp-47926.appspot.com",
-	messagingSenderId: "714326360861",
-	appId: "1:714326360861:web:f239473a595d507f6757f4"
-};
-
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-var db = firebase.database();
-
 function saveBlog(){
 	var blogTitle = document.getElementById("newBlogTitle").innerText.trim();
 	console.log(blogTitle);
