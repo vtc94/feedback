@@ -21,7 +21,7 @@ function saveFeedback(){
 		document.getElementById('notice').innerHTML = "Feedback has been sent, return to PTELT in 2s...";
 		document.getElementById('notice').style.display = 'block';
 		setTimeout(() => {
-			window.location.back;
+			window.history.back();
 		}, 2000);
 	} else {
 		document.getElementById('notice').innerHTML = "Cannot send feedback, something is missing...";
